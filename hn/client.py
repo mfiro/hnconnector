@@ -8,9 +8,19 @@ class Client:
         pass
 
     def _request(self, url):
-        r = requests.get(url)
-        r = r.json()
-        return r
+        try:
+            response = requests.get(url)
+            response.raise_for_status()  # Raise an exception for 4xx or 5xx status codes
+            return response.json()       # Return JSON response if request is successful
+        except requests.exceptions.RequestException as e:
+            # Handle connection errors, timeouts, and other request exceptions
+            print(f"Request failed: {e}")
+        except ValueError as e:
+            # Handle JSON decoding errors
+            print(f"Failed to decode JSON: {e}")
+        except Exception as e:
+            # Handle other unexpected errors
+            print(f"An unexpected error occurred: {e}")
     
     def _makeurl(self, endpoint_name, type_='json'):
         return f"{self.__class__.base_url}/{endpoint_name}.{type_}"
@@ -46,3 +56,32 @@ class Client:
     def get_maxitem(self):
         url = self._makeurl(endpoint_name='maxitem')
         return self._request(url)
+    
+    def get_user(self, username):
+        url = self._makeurl(endpoint_name=f'user/{username}')
+        return self._request(url)
+    
+    def get_askstories(self):
+        """Returns up to 200 of the latest Ask HN
+        """
+
+        url = self._makeurl(endpoint_name='askstories')
+        return self._request(url)
+    
+    def get_showhn(self):
+        """Returns up to 200 of the latest Show HN
+        """
+
+        url = self._makeurl(endpoint_name='showstories')
+        return self._request(url)
+    
+    def get_jobstories(self):
+        """Returns up to 200 of the latest Job stories
+        """
+
+        url = self._makeurl(endpoint_name='jobstories')
+        return self._request(url)
+    
+
+
+
