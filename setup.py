@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='py-hn',
+    name='hnconnector',
     version='0.1.0',
     packages=find_packages(),
     description='An unofficial Hacker News API Client Library in Python',
@@ -9,7 +9,7 @@ setup(
     long_description_content_type='text/markdown',
     author='mfiro',
     author_email='mfiro@protonmail.com',
-    url='https://github.com/mfiro/py-hn',
+    url='https://github.com/mfiro/hnconnector',
     install_requires=[
         'requests',
     ],

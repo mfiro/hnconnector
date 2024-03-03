@@ -1,6 +1,6 @@
-# py-hn: An unofficial Hacker News API Client Library in Python
+# hnconnector: An unofficial Hacker News API Client Library in Python
 
-**py-hn** is a lightweight Python library designed to simplify accessing the Hacker News API. With **py-hn**, you can easily fetch stories, comments, user profiles, and other data from Hacker News with minimal setup. Whether you're building a custom Hacker News reader, analyzing Hacker News stories, or integrating Hacker News data into your projects, py-hn provides a straightforward Pythonic interface to interact with Hacker News.
+**hnconnector** is a lightweight Python library designed to simplify accessing the Hacker News API. With **hnconnector**, you can easily fetch stories, comments, user profiles, and other data from Hacker News with minimal setup. Whether you're building a custom Hacker News reader, analyzing Hacker News stories, or integrating Hacker News data into your projects, hnconnector provides a straightforward Pythonic interface to interact with Hacker News.
 
 ## Features
 * Fetch top, new, and best stories from Hacker News
@@ -9,16 +9,16 @@
 * Simple and intuitive API
 
 ## Installation
-**py-hn** can be installed using pip. Ensure you have Python 3.6 or higher installed on your system. To install **py-hn**, open your terminal and run:
+**hnconnector** can be installed using pip. Ensure you have Python 3.6 or higher installed on your system. To install **hnconnector**, open your terminal and run:
 
 ```bash
-pip install py-hn
+pip install hnconnector
 ```
 ## Quick Start
 Here's a quick example to get you started by fetching the top stories from Hacker News:
 
 ```python
-from py-hn import Client
+from hnconnector import Client
 
 client = Client()
 
@@ -38,7 +38,7 @@ print(f"Details of the top story: {story_details}")
 Create an instance of the **Client** class to start interacting with the API:
 
 ```python
-from py-hn import Client
+from hnconnector import Client
 
 client = Client()
 ```
@@ -72,10 +72,10 @@ print(user_details['karma'])
 ```
 
 ### Contributing
-Contributions to **py-hn** are welcome! 
+Contributions to **hnconnector** are welcome! 
 
 ### License
-**py-hn** is released under the MIT License. See the LICENSE file for more details.
+**hnconnector** is released under the MIT License. See the LICENSE file for more details.
 
 ### Contact
-For questions or feedback regarding **py-hn**, please open an issue on the GitHub repository: https://github.com/mfiro/py-hn.
+For questions or feedback regarding **hnconnector**, please open an issue on the GitHub repository: https://github.com/mfiro/hnconnector.
