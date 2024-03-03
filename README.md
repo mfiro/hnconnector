@@ -1,2 +1,2 @@
 # python-hn
-A wrapper for the HackerNews API
+Unofficial wrapper for the HackerNews API
