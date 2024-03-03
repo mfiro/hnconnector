@@ -3,3 +3,5 @@
 .. author:: mfiro
 
 """
+
+from hn.client import Client
