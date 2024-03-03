@@ -1,4 +1,4 @@
-"""An unofficial Python wrapper for the Hacker News API
+"""An unofficial Hacker News API Client Library in Python
 
 .. author:: mfiro
 

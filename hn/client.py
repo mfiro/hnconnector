@@ -2,7 +2,7 @@ import requests
 import datetime
 
 class Client:
-    """A Python client for the Hacker News API."""
+    """An unofficial Hacker News API Client Library in Python"""
 
     base_url = 'https://hacker-news.firebaseio.com/v0/'
 
