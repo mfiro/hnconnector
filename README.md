@@ -1,5 +1,7 @@
 # hnconnector: An unofficial Hacker News API Client Library in Python
 
+[![PyPI version](https://badge.fury.io/py/hnconnector.svg)](https://pypi.org/project/hnconnector/)
+
 **hnconnector** is a lightweight Python library designed to simplify accessing the Hacker News API. With **hnconnector**, you can easily fetch stories, comments, user profiles, and other data from Hacker News with minimal setup. Whether you're building a custom Hacker News reader, analyzing Hacker News stories, or integrating Hacker News data into your projects, hnconnector provides a straightforward Pythonic interface to interact with Hacker News.
 
 ## Features
