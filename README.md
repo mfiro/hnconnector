@@ -18,7 +18,7 @@ pip install hnconnector
 Here's a quick example to get you started by fetching the top stories from Hacker News:
 
 ```python
-from hnconnector import Client
+from hn import Client
 
 client = Client()
 
@@ -38,7 +38,7 @@ print(f"Details of the top story: {story_details}")
 Create an instance of the **Client** class to start interacting with the API:
 
 ```python
-from hnconnector import Client
+from hn import Client
 
 client = Client()
 ```
