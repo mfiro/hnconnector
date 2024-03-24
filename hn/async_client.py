@@ -34,13 +34,6 @@ class aioClient:
             except Exception as e:
                 # Handles other unspecified errors
                 print(f"An unexpected error has occurred: {e}")
-
-    async def _request_____(self, url):
-        async with aiohttp.ClientSession() as session:
-            async with session.get(url) as response:
-                print(f"Status: {response.status}")
-                return await response.json()
-    
     
     def _makeurl(self, endpoint_name, type_='json'):
         """
