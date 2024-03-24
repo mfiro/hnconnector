@@ -5,3 +5,4 @@
 """
 
 from hn.client import Client
+from hn.async_client import aioClient

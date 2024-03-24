@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='hnconnector',
-    version='0.1.0',
+    version='0.1.2',
     packages=find_packages(),
     description='An unofficial Hacker News API Client Library in Python',
     long_description=open('README.md').read(),
